@@ -1,5 +1,10 @@
 /* 
     Austin McCowan
     04/07/2021
-    css for layout and such
+    css for general styling
 */
+
+/* ---- Grid layout ---- */
+.grid-container {
+    display: grid;
+}
