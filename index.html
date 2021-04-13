@@ -16,21 +16,25 @@
       <h1>Header/nav</h1>
       <!--nav-->
       <nav>
-        <a href="#">Projects</a>
-        <a href="#">About Me</a>
-        <a href="#">Contact</a>
-        <a href="#">Resume</a>
+        <button onclick="pagechange(this)" id="btn-home" value="./iframes/home.html">Home</button>
+        <button onclick="pagechange(this)" id="btn-project">Projects</button>
+        <button onclick="pagechange(this)" id="btn-about" value="./iframes/about.html">About Me</button>
+        <button onclick="pagechange(this)" id="btn-contact">Contact</button>
+        <button onclick="pagechange(this)" id="btn-resume">Resume</button>
       </nav>
     </div>
 
     <!-- Main -->
     <div>
-      <iframe src="./home.html"></iframe>
+      <iframe src="./iframes/home.html" id="iframe-id"></iframe>
     </div>
 
     <!-- Footer -->
     <div>
       <h1>Footer</h1>
     </div>
+
+    <!-- Javascript source -->
+    <script src="./js/site.js"></script>
   </body>
 </html>

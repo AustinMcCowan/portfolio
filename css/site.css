@@ -7,4 +7,5 @@
 /* ---- Grid layout ---- */
 .grid-container {
     display: grid;
+    grid-template-rows: 20% 70% 10%;
 }
