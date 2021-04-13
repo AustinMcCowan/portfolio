@@ -3,3 +3,16 @@
     04/13/2021
     css for index.html
 */
+
+/* ---- Header ---- */
+.divheader {
+    background-color: #aaa;
+}
+
+.btn-currentpage {
+    background-color: white;
+}
+
+.btn-page {
+    background-color: grey;
+}

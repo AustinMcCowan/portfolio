@@ -11,16 +11,16 @@
   </head>
   <body>
     <!--Header-->
-    <div>
+    <div id="divheader">
       <!--Title-->
       <h1>Header/nav</h1>
       <!--nav-->
       <nav>
-        <button onclick="pagechange(this)" id="btn-home" value="./iframes/home.html">Home</button>
-        <button onclick="pagechange(this)" id="btn-project">Projects</button>
-        <button onclick="pagechange(this)" id="btn-about" value="./iframes/about.html">About Me</button>
-        <button onclick="pagechange(this)" id="btn-contact">Contact</button>
-        <button onclick="pagechange(this)" id="btn-resume">Resume</button>
+        <button onclick="pagechange(this)" class="btn-currentpage" value="./iframes/home.html">Home</button>
+        <button onclick="pagechange(this)" class="btn-page" value="./iframes/project.html">Projects</button>
+        <button onclick="pagechange(this)" class="btn-page" value="./iframes/about.html">About Me</button>
+        <button onclick="pagechange(this)" class="btn-page" value="./iframes/contact.html">Contact</button>
+        <button onclick="pagechange(this)" class="btn-page" value="./iframes/resume.html">Resume</button>
       </nav>
     </div>
 
