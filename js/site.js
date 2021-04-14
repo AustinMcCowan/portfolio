@@ -9,7 +9,6 @@ function pagechange(button) {
     document.getElementById("iframe-id").src = button.value;
     // Revert current page button css to normal
     document.getElementsByClassName("btn-currentpage")[0].className = "btn-page";
-    
     // Change the css of the nav button that was just clicked to indicate what page the user is currently on
     button.className = "btn-currentpage";
 }
