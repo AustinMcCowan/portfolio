@@ -10,30 +10,32 @@
     <link rel="stylesheet" href="./css/index.css">
   </head>
   <body>
-    <!--Header-->
-    <div id="divheader">
-      <!--Title-->
-      <h1>Header/nav</h1>
-      <!--nav-->
-      <nav>
-        <button onclick="pagechange(this)" class="btn-currentpage" value="./iframes/home.html">Home</button>
-        <button onclick="pagechange(this)" class="btn-page" value="./iframes/project.html">Projects</button>
-        <button onclick="pagechange(this)" class="btn-page" value="./iframes/about.html">About Me</button>
-        <button onclick="pagechange(this)" class="btn-page" value="./iframes/contact.html">Contact</button>
-        <button onclick="pagechange(this)" class="btn-page" value="./iframes/resume.html">Resume</button>
-      </nav>
-    </div>
+    <div class="grid-container">
+      <!--Header-->
+      <div id="div-header">
+        <!--Title-->
+        <h1>Header/nav</h1>
+        <!--nav-->
+        <nav>
+          <button onclick="pagechange(this)" class="btn-currentpage" value="./iframes/home.html">Home</button>
+          <button onclick="pagechange(this)" class="btn-page" value="./iframes/project.html">Projects</button>
+          <button onclick="pagechange(this)" class="btn-page" value="./iframes/about.html">About Me</button>
+          <button onclick="pagechange(this)" class="btn-page" value="./iframes/contact.html">Contact</button>
+          <button onclick="pagechange(this)" class="btn-page" value="./iframes/resume.html">Resume</button>
+        </nav>
+      </div>
 
-    <!-- Main -->
-    <div>
-      <iframe src="./iframes/home.html" id="iframe-id"></iframe>
-    </div>
+      <!-- Main -->
+      <div id="div-iframe">
+        <iframe src="./iframes/home.html" id="iframe-id"></iframe>
+      </div>
 
-    <!-- Footer -->
-    <div>
-      <h1>Footer</h1>
-    </div>
+      <!-- Footer -->
+      <div>
+        <h1>Footer</h1>
+      </div>
 
+    </div>
     <!-- Javascript source -->
     <script src="./js/site.js"></script>
   </body>

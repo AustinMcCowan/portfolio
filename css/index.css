@@ -5,8 +5,24 @@
 */
 
 /* ---- Header ---- */
-.divheader {
-    background-color: #aaa;
+#div-header {
+    background-color: rgb(35, 1, 73);
+    color: white;
+    width: 100%;
+    margin: 0;
+    height: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#div-header h1 {
+    color: white;
+}
+
+#div-header nav {
+    margin: auto;
+    margin-bottom: 0;
 }
 
 .btn-currentpage {
@@ -16,3 +32,19 @@
 .btn-page {
     background-color: grey;
 }
+
+/* ---- Iframe ---- */
+iframe {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+#div-iframe {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    
+}
+
+/* ---- Footer ---- */
