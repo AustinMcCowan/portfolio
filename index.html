@@ -8,7 +8,8 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/site.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index_styles.css" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <div class="container">
@@ -16,15 +17,18 @@
       <div id="div-header">
         <!--Title-->
         <h1>Austin McCowan</h1>
-        <!--nav-->
-        <nav>
-          <button onclick="pagechange(this)" class="btn-currentpage" value="./iframes/home.html">Home</button>
-          <button onclick="pagechange(this)" class="btn-page" value="./iframes/project.html">Projects</button>
-          <button onclick="pagechange(this)" class="btn-page" value="./iframes/about.html">About Me</button>
-          <button onclick="pagechange(this)" class="btn-page" value="./iframes/contact.html">Contact</button>
-          <button onclick="pagechange(this)" class="btn-page" value="./iframes/resume.html">Resume</button>
-        </nav>
+        <!-- Nav -->
+        <div id="nav-header">
+          <nav>
+            <button onclick="pagechange(this)" class="btn-currentpage" value="./iframes/home.html">Home</button>
+            <button onclick="pagechange(this)" class="btn-page" value="./iframes/project.html">Projects</button>
+            <button onclick="pagechange(this)" class="btn-page" value="./iframes/about.html">About Me</button>
+            <button onclick="pagechange(this)" class="btn-page" value="./iframes/contact.html">Contact</button>
+            <button onclick="pagechange(this)" class="btn-page" value="./iframes/resume.html">Resume</button>
+          </nav>
+        </div>
       </div>
+      
 
       <!-- Main -->
       <div id="div-iframe">

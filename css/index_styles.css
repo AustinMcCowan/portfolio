@@ -1,0 +1,36 @@
+/* 
+    Austin McCowan
+    04/28/2021
+    flex layouts for index.html
+*/
+
+/* ===== IMPORT ==== */
+
+@import url('index.css') screen;
+
+/* 
+   =============================
+	Mobile Styles: 0 - 480 pixels
+   =============================
+*/
+
+@media only screen and (max-width: 480px) {
+    #div-header {
+        -webkit-position: relative;
+        position: relative; 
+
+    }
+
+}
+
+/* =================================================
+	Tablet and Desktop Styles: 481 pixels and greater
+   =================================================
+*/
+
+@media only screen and (min-width: 481px) {
+    #div-header {
+        -webkit-position: sticky;
+        position: sticky;
+    }
+}

@@ -56,7 +56,7 @@ iframe {
 }
 
 #div-iframe {
-    width: 85%;
+    max-width: 1150px;
     margin: auto;
     height: 100%;
     background-color: white;
