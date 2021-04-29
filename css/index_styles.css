@@ -8,6 +8,17 @@
 
 @import url('index.css') screen;
 
+/* ==== GENERAL ==== */
+
+header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-content: center;
+}
+
 /* 
    =============================
 	Mobile Styles: 0 - 480 pixels
@@ -15,10 +26,50 @@
 */
 
 @media only screen and (max-width: 480px) {
-    #div-header {
+    header {
         -webkit-position: relative;
         position: relative; 
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+    }
 
+    header > h1 {
+        -webkit-order: 99;
+        order: 99;
+    }
+
+    nav {
+        -webkit-order: 30;
+        order: 30;
+        -webkit-flex: 1 1 40px;
+        flex: 1 1 40px;
+        position: relative;
+        display: block;
+    }
+
+    nav > ul {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        background-color: black;
+    }
+
+    nav > ul > button {
+        display: block;
+     }
+
+    a#navicon {
+        display: block;
+    }
+
+    nav:hover > ul {
+        display: block;
+    }
+
+    header img {
+        width: 100%;
+        height: 100%;
     }
 
 }
@@ -29,8 +80,14 @@
 */
 
 @media only screen and (min-width: 481px) {
-    #div-header {
+    header {
         -webkit-position: sticky;
         position: sticky;
+        -webkit-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    }
+
+    ul {
+        margin: auto;
     }
 }
