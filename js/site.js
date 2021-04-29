@@ -15,7 +15,7 @@ function pagechange(button) {
 
 
 // Set automatic offset for nav header based on div header height (IF KEEPING BOTH HEADERS)
-
+/*
 try{
     function resize() {
         if (window.getComputedStyle(document.getElementById("div-header")).getPropertyValue('position') != "relative") {
@@ -35,3 +35,4 @@ try{
 catch {
     console.error("positioning failed");
 }
+*/
