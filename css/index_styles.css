@@ -36,6 +36,17 @@ header {
     header > h1 {
         -webkit-order: 99;
         order: 99;
+        margin: auto;
+        margin-left: 10px;
+        height: auto;
+    }
+
+    #mobile-title {
+        display: block;
+    }
+
+    #default-title {
+        display: none;
     }
 
     nav {
@@ -93,5 +104,23 @@ header {
 
     ul {
         margin: auto;
+    }
+
+    header > h1 {
+        -webkit-order: 20;
+        order: 20;
+    }
+
+    #mobile-title {
+        display: none;
+    }
+
+    #default-title {
+        display: block;
+    }
+
+    nav {
+        -webkit-order: 30;
+        order: 30;
     }
 }

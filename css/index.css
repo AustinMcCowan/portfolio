@@ -15,7 +15,6 @@ header {
     position: sticky;
     top: 0;
     border-bottom: 5px solid rgb(87, 0, 145);
-    max-height: 100px;
 }
 
 header h1 {
@@ -37,6 +36,7 @@ header nav > ul > * {
     border: none;
     padding: .5%;
     width: 10%;
+    height: 100%;
 }
 
 header nav > ul {
