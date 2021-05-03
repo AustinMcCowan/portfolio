@@ -46,7 +46,7 @@ header nav > ul {
 }
 
 .btn-currentpage {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: black;
 }
 
@@ -63,7 +63,7 @@ a#navicon {
 a#navicon img {
     height: auto;
     width: auto;
-    max-height: 100px;
+    max-height: 80px;
 }
 
 /* ---- Iframe ---- */
@@ -84,15 +84,12 @@ iframe {
 }
 
 /* ---- Footer ---- */
-#div-footer {
+footer {
     width: 100%;
     margin: 0;
     min-height: 10%;
     background-color: black;
     color: white;
     padding: 3px;
-}
-
-#div-footer {
     text-align: center;
 }
