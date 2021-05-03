@@ -103,6 +103,11 @@ footer {
         height: 100%;
     }
 
+    footer {
+        -webkit-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    }
+
 }
 
 /* =================================================
@@ -140,5 +145,10 @@ footer {
     nav {
         -webkit-order: 30;
         order: 30;
+    }
+
+    footer {
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap;
     }
 }

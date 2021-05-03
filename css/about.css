@@ -1,0 +1,24 @@
+/* 
+    Austin McCowan
+    05/03/2021
+    css for about page
+*/
+
+#about-main {
+    width: 100%;
+    clear: both;
+    display: block;
+}
+
+#about-pic {
+    width: 40%;
+}
+
+#about-pic img {
+    width: 80%;
+    height: auto;
+}
+
+#about-desc {
+    width: 60%;
+}
