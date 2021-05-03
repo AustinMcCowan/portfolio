@@ -10,6 +10,10 @@
     display: block;
 }
 
+#about-main {
+    margin: auto;
+}
+
 #about-pic {
     width: 40%;
 }
