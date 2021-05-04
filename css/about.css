@@ -21,6 +21,7 @@
 #about-pic img {
     width: 80%;
     height: auto;
+    margin: auto;
 }
 
 #about-desc {

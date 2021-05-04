@@ -18,3 +18,22 @@
     display: flex;
     align-content: center;
 }
+
+/* 
+   =============================
+	Mobile Styles: 0 - 480 pixels
+   =============================
+*/
+
+@media only screen and (max-width: 480px) {
+    
+}
+
+/* =================================================
+	Tablet and Desktop Styles: 481 pixels and greater
+   =================================================
+*/
+
+@media only screen and (min-width: 481px) {
+
+}
