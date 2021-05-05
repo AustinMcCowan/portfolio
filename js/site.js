@@ -13,7 +13,6 @@ function pagechange(button) {
     button.className = "btn-currentpage";
 }
 
-
 // Set automatic offset for nav header based on div header height (IF KEEPING BOTH HEADERS)
 /*
 try{
