@@ -34,3 +34,10 @@ html, body {
     width: 60%;
     color: white;
 }
+
+#about-desc p {
+    margin: 5px;
+    padding: 10px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
