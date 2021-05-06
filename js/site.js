@@ -24,7 +24,7 @@ function pagechange_onrefresh(){
     var i;
     var button_value;
     for (i = 0; i < buttons.length; i++) {
-        button_value = "file:///home/amccowan/GIT/portfolio" + buttons[i].value.slice('1');
+        button_value = iframe.src.slice(0, iframe.src.lastIndexOf("/iframes")) + buttons[i].value.slice(buttons[i].value.indexOf("/iframes"));
         console.log(button_value);
         if (button_value == iframe.src) {
             buttons[i].className = "btn-currentpage";
