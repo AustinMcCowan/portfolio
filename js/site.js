@@ -28,7 +28,7 @@ function pagechange_onrefresh(){
         console.log(button_value);
         if (button_value == iframe.src) {
             buttons[i].className = "btn-currentpage";
-            document.getElementById("iframe-id").src = button.value;
+            document.getElementById("iframe-id").src = button_value;
             console.log("changed page");
             break;
         }
