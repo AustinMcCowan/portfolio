@@ -28,6 +28,7 @@ function pagechange_onrefresh(){
         console.log(button_value);
         if (button_value == iframe.src) {
             buttons[i].className = "btn-currentpage";
+            document.getElementById("iframe-id").src = button.value;
             console.log("changed page");
             break;
         }
@@ -35,7 +36,7 @@ function pagechange_onrefresh(){
 }
 
 // Set event trigger
-document.getElementById("iframe-id").onload = function(){pagechange_onrefresh}
+pagechange_onrefresh();
 
 
 
