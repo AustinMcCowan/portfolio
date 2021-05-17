@@ -16,31 +16,36 @@ function pagechange(button) {
 
 // Changes page on refresh to current iframe page
 function pagechange_onrefresh(){
-    let iframe = document.getElementById("iframe-id");
-    document.getElementsByClassName("btn-currentpage")[0].className = "btn-page";
-    let buttons = document.getElementById("main-nav").getElementsByTagName("button");
+    try{
+        let frame = document.getElementById("iframe-id");
+        document.getElementsByClassName("btn-currentpage")[0].className = "btn-page";
+        let buttons = document.getElementById("main-nav").getElementsByTagName("button");
 
-    // Loop through elements in nav bar and change them
-    var i;
-    var button_value;
-    for (i = 0; i < buttons.length; i++) {
-        button_value = iframe.src.slice(0, iframe.src.lastIndexOf("/iframes")) + buttons[i].value.slice(buttons[i].value.indexOf("/iframes"));
-        console.log(button_value);
-        if (button_value == iframe.src) {
-            buttons[i].className = "btn-currentpage";
-            document.getElementById("iframe-id").src = button_value;
-            console.log("changed page");
-            break;
+        // Loop through elements in nav bar and change them
+        var i;
+        var button_value;
+        for (i = 0; i < buttons.length; i++) {
+            button_value = frame.src.slice(0, frame.src.lastIndexOf("/iframes")) + buttons[i].value.slice(buttons[i].value.indexOf("/iframes"));
+            console.log(button_value);
+            if (button_value == frame.src) {
+                buttons[i].className = "btn-currentpage";
+                document.getElementById("iframe-id").src = button_value;
+                console.log("changed page");
+                break;
+            }
         }
     }
+    finally {
+        null
+    }
+};
+
+function iframe_pagechange(button){
+    window.location = button.value;
 }
 
 // Set event trigger
-pagechange_onrefresh();
-
-
-
-// Set iframe size based on load of page and resize of window
+window.onload = pagechange_onrefresh;
 
 
 // Set automatic offset for nav header based on div header height (IF KEEPING BOTH HEADERS)

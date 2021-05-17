@@ -6,15 +6,19 @@
 
 #guide {
     background-color: rgb(67, 40, 109);
+    height: 240px;
+}
+
+#guide hr {
+    color: white;
 }
 
 #guide > div {
     padding: 0px 15px;
-    margin: 10px;
+    margin: 10px auto;
     min-width: 200px;
-    height: 175px;
+    min-height: 175px;
     background-color: rgb(119, 65, 201);
-    color: yellow;
     border-color:rgb(28, 18, 43);
     border-style: solid;
     border-width: 3px;
@@ -23,6 +27,103 @@
     text-align: center;
 }
 
+#guide > div > h2 {
+    color: yellow;
+}
+
 #guide > div:hover {
-    background-color: rgb(137, 86, 214);
+    background-color: rgb(156, 105, 233);
+}
+
+#guide > div > p {
+    display: block;
+    overflow: hidden;
+    height: 0px;
+    transition-duration: .4s;
+    margin: 0px;
+    color: rgb(0, 0, 0);
+}
+
+#guide > div:hover > p {
+    height: 60px;
+    margin: 8px;
+}
+
+#guide .guide-button {
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    margin: 4px 2px;
+    transition-duration: 0.25s;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+/* Create a dynamic border that contains a rotating, shiny, rounded linear gradient */
+@keyframes text-shift{
+    0%{
+        background-image: linear-gradient(#555555, #555555),
+        linear-gradient(0deg, yellow, rgb(254, 255, 168), yellow);
+    }
+    10% {
+        background-image: linear-gradient(#555555, #555555),
+        linear-gradient(36deg, yellow, rgb(254, 255, 168), yellow);
+    }
+    20% {
+        background-image: linear-gradient(#555555, #555555),
+        linear-gradient(72deg, yellow, rgb(254, 255, 168), yellow);
+    }
+    30% {
+        background-image: linear-gradient(#555555, #555555),
+        linear-gradient(144deg, yellow, rgb(254, 255, 168), yellow);
+    };
+    40% {
+        background-image: linear-gradient(#555555, #555555),
+        linear-gradient(180deg, yellow, rgb(254, 255, 168), yellow);
+    }
+    50% {
+        background-image: linear-gradient(#555555, #555555),
+        linear-gradient(216deg, yellow, rgb(254, 255, 168), yellow);
+    }
+    60% {
+        background-image: linear-gradient(#555555, #555555),
+        linear-gradient(252deg, yellow, rgb(254, 255, 168), yellow);
+    }
+    70% {
+        background-image: linear-gradient(#555555, #555555),
+        linear-gradient(288deg, yellow, rgb(254, 255, 168), yellow);
+    }
+    80% {
+        background-image: linear-gradient(#555555, #555555),
+        linear-gradient(324deg, yellow, rgb(254, 255, 168), yellow);
+    }
+    90% {
+        background-image: linear-gradient(#555555, #555555),
+        linear-gradient(360deg, yellow, rgb(254, 255, 168), yellow);
+    }
+    100% {
+        background-image: linear-gradient(#555555, #555555),
+        linear-gradient(0deg, yellow, rgb(254, 255, 168), yellow);
+    }
+}
+
+#guide .guide-button:hover {
+    background-color: #555555;
+    color: yellow;
+    animation-name: text-shift;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 0;
+    border-image-width: 3px;
+    border: 3px solid transparent;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
 }
