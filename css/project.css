@@ -3,3 +3,34 @@
     04/13/2021
     css for project.html
 */
+
+div .content {
+    width: 100%;
+    min-height: 400px;
+    text-align: center;
+    position: relative;
+    background-color: rgb(81, 54, 155);
+    color: white;
+    z-index: 50;
+}
+
+div .content a {
+    color: rgb(0, 217, 255);
+}
+
+div .upper {
+    background-color: rgb(102, 0, 255);
+    box-shadow: 0px 10px 20px 5px black;
+    z-index: 100;
+}
+
+div .content > * {
+    margin: auto;
+    padding-top: 30px;
+}
+
+div .content > div > img {
+    width: 50%;
+    margin: auto;
+    display: block;
+}

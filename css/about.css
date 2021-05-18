@@ -33,6 +33,7 @@ html, body {
 #about-desc {
     width: 60%;
     color: white;
+    height: auto;
 }
 
 #about-desc p {

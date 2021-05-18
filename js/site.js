@@ -16,9 +16,14 @@ function pagechange(button) {
 
 // Changes page on refresh to current iframe page
 function pagechange_onrefresh(){
+    let frame = document.getElementById("iframe-id");
     try{
-        let frame = document.getElementById("iframe-id");
         document.getElementsByClassName("btn-currentpage")[0].className = "btn-page";
+    }
+    catch{
+        frame.src = "./iframes/home.html"
+    }
+    finally {
         let buttons = document.getElementById("main-nav").getElementsByTagName("button");
 
         // Loop through elements in nav bar and change them
@@ -26,7 +31,6 @@ function pagechange_onrefresh(){
         var button_value;
         for (i = 0; i < buttons.length; i++) {
             button_value = frame.src.slice(0, frame.src.lastIndexOf("/iframes")) + buttons[i].value.slice(buttons[i].value.indexOf("/iframes"));
-            console.log(button_value);
             if (button_value == frame.src) {
                 buttons[i].className = "btn-currentpage";
                 document.getElementById("iframe-id").src = button_value;
@@ -35,23 +39,27 @@ function pagechange_onrefresh(){
             }
         }
     }
-    finally {
-        null
-    }
 };
 
 function pagechange_fromhome(){
     let frame = document.getElementById('iframe-id');
-    document.getElementsByClassName("btn-currentpage")[0].className = "btn-page";
-    let buttons = document.getElementById("main-nav").getElementsByTagName("button");
-    var i;
-    var button_value;
-    for (i = 0; i < buttons.length; i++) {
-        button_value = frame.src.slice(0, frame.src.lastIndexOf("/iframes")) + buttons[i].value.slice(buttons[i].value.indexOf("/iframes"));
-        console.log(button_value);
-        if (button_value == frame.src) {
-            buttons[i].className = "btn-currentpage";
-            break;
+    try{
+        document.getElementsByClassName("btn-currentpage")[0].className = "btn-page";
+    }
+    catch{
+        null;
+    }
+    finally{
+        let buttons = document.getElementById("main-nav").getElementsByTagName("button");
+        var i;
+        var button_value;
+        for (i = 0; i < buttons.length; i++) {
+            button_value = frame.src.slice(0, frame.src.lastIndexOf("/iframes")) + buttons[i].value.slice(buttons[i].value.indexOf("/iframes"));
+            console.log(button_value);
+            if (button_value == frame.src) {
+                buttons[i].className = "btn-currentpage";
+                break;
+            }
         }
     }
 }

@@ -26,7 +26,26 @@
 */
 
 @media only screen and (max-width: 480px) {
-    
+   #about-main {
+      -webkit-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+   }
+   
+   #about-main > * {
+      margin: auto;
+   }
+
+   #about-pic {
+      width: 60%;
+   }
+
+   #about-desc {
+      width: 80%;
+   }
+
+   #about-desc > h1 {
+      text-align: center;
+   }
 }
 
 /* =================================================
@@ -35,5 +54,13 @@
 */
 
 @media only screen and (min-width: 481px) {
+   #about-main {
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+   }
 
+   #about-desc {
+      margin-top: 40px;
+      margin-right: 10px;
+   }
 }

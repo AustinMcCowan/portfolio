@@ -27,3 +27,14 @@ body * {
 .container div {
     width: 100%;
 }
+
+/* ---- General CSS ---- */
+
+a {
+    color:rgb(61, 96, 211);
+    font-size: 20px;
+}
+
+a:visited {
+    color: rgb(61, 96, 211);
+}
