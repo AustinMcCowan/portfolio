@@ -55,7 +55,6 @@ function pagechange_fromhome(){
         var button_value;
         for (i = 0; i < buttons.length; i++) {
             button_value = frame.src.slice(0, frame.src.lastIndexOf("/iframes")) + buttons[i].value.slice(buttons[i].value.indexOf("/iframes"));
-            console.log(button_value);
             if (button_value == frame.src) {
                 buttons[i].className = "btn-currentpage";
                 break;
