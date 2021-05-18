@@ -40,13 +40,24 @@ function pagechange_onrefresh(){
     }
 };
 
-function iframe_pagechange(button){
-    window.location = button.value;
+function pagechange_fromhome(){
+    let frame = document.getElementById('iframe-id');
+    document.getElementsByClassName("btn-currentpage")[0].className = "btn-page";
+    let buttons = document.getElementById("main-nav").getElementsByTagName("button");
+    var i;
+    var button_value;
+    for (i = 0; i < buttons.length; i++) {
+        button_value = frame.src.slice(0, frame.src.lastIndexOf("/iframes")) + buttons[i].value.slice(buttons[i].value.indexOf("/iframes"));
+        console.log(button_value);
+        if (button_value == frame.src) {
+            buttons[i].className = "btn-currentpage";
+            break;
+        }
+    }
 }
 
-// Set event trigger
+// Set event triggers
 window.onload = pagechange_onrefresh;
-
 
 // Set automatic offset for nav header based on div header height (IF KEEPING BOTH HEADERS)
 /*

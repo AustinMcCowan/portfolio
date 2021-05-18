@@ -4,9 +4,27 @@
     css for home page
 */
 
+/* ==== Intro ==== */
+#div-intro {
+    width: 100%;
+    min-height: 300px;
+    background-color:rgb(81, 54, 155);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+}
+
+#div-intro p {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 5px;
+}
+
+/* ==== Guide section ==== */
 #guide {
     background-color: rgb(67, 40, 109);
-    height: 240px;
+    min-height: 300px;
 }
 
 #guide hr {
@@ -15,9 +33,10 @@
 
 #guide > div {
     padding: 0px 15px;
-    margin: 10px auto;
+    margin: auto auto;
     min-width: 200px;
     min-height: 175px;
+    height: 240px;
     background-color: rgb(119, 65, 201);
     border-color:rgb(28, 18, 43);
     border-style: solid;
@@ -62,53 +81,54 @@
     cursor: pointer;
     border-radius: 7px;
     font-weight: bold;
+    display: inline-block;
 }
 
 /* Create a dynamic border that contains a rotating, shiny, rounded linear gradient */
 @keyframes text-shift{
     0%{
         background-image: linear-gradient(#555555, #555555),
-        linear-gradient(0deg, yellow, rgb(254, 255, 168), yellow);
+        linear-gradient(0deg, yellow, white, yellow);
     }
     10% {
         background-image: linear-gradient(#555555, #555555),
-        linear-gradient(36deg, yellow, rgb(254, 255, 168), yellow);
+        linear-gradient(36deg, yellow, white, yellow);
     }
     20% {
         background-image: linear-gradient(#555555, #555555),
-        linear-gradient(72deg, yellow, rgb(254, 255, 168), yellow);
+        linear-gradient(72deg, yellow, white, yellow);
     }
     30% {
         background-image: linear-gradient(#555555, #555555),
-        linear-gradient(144deg, yellow, rgb(254, 255, 168), yellow);
+        linear-gradient(144deg, yellow, white, yellow);
     };
     40% {
         background-image: linear-gradient(#555555, #555555),
-        linear-gradient(180deg, yellow, rgb(254, 255, 168), yellow);
+        linear-gradient(180deg, yellow, white, yellow);
     }
     50% {
         background-image: linear-gradient(#555555, #555555),
-        linear-gradient(216deg, yellow, rgb(254, 255, 168), yellow);
+        linear-gradient(216deg, yellow, white, yellow);
     }
     60% {
         background-image: linear-gradient(#555555, #555555),
-        linear-gradient(252deg, yellow, rgb(254, 255, 168), yellow);
+        linear-gradient(252deg, yellow, white, yellow);
     }
     70% {
         background-image: linear-gradient(#555555, #555555),
-        linear-gradient(288deg, yellow, rgb(254, 255, 168), yellow);
+        linear-gradient(288deg, yellow, white, yellow);
     }
     80% {
         background-image: linear-gradient(#555555, #555555),
-        linear-gradient(324deg, yellow, rgb(254, 255, 168), yellow);
+        linear-gradient(324deg, yellow, white, yellow);
     }
     90% {
         background-image: linear-gradient(#555555, #555555),
-        linear-gradient(360deg, yellow, rgb(254, 255, 168), yellow);
+        linear-gradient(360deg, yellow, white, yellow);
     }
     100% {
         background-image: linear-gradient(#555555, #555555),
-        linear-gradient(0deg, yellow, rgb(254, 255, 168), yellow);
+        linear-gradient(0deg, yellow, white, yellow);
     }
 }
 
